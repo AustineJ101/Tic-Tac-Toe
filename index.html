@@ -9,7 +9,38 @@
 <body>
 
   <h1>Tic Tac Toe Game</h1>
-
+  <div class="container">
+    <form action="#">
+      <fieldset>
+    
+        <legend>Input player names</legend>
+        <div>
+          <label for="firstPlayer">Player1:</label>
+          <input type="text" id="firstPlayer" required>
+        </div>
+        <div>
+          <label for="secondPlayer">Player2:</label>
+          <input type="text" id="secondPlayer" required>
+        </div>
+        <button>Save</button>
+      </fieldset>
+    </form>
+    <div>
+      <div class="players">
+        <button id="player1">PLayer1</button>
+        <button id="player2">Player2</button>
+      </div>
+      <div id="gameboard">
+        <div class="row1"></div>
+        <div class="row2"></div>
+        <div class="row3"></div>
+      </div>
+      <button class="restartBtn">Restart Game</button>
+    </div>
+  </div>
+  
+  <div id="results">
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>

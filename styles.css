@@ -4,4 +4,110 @@
 
 h1{
   color: rebeccapurple;
+  margin-bottom: 30px;
+}
+
+fieldset{
+  border: 1px solid rebeccapurple;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+legend{
+  font-size: 18px;
+  font-style:italic;
+}
+
+input{
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+input:focus{
+  outline-color: rebeccapurple;
+}
+
+fieldset button{
+  padding: 10px 25px;
+  background-color: rebeccapurple;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+
+}
+
+fieldset button:hover{
+  background-color: rgb(126, 62, 190);
+}
+#gameboard{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  font-size: 28px;
+
+
+}
+
+.container{
+  display: flex;
+  gap: 100px;
+}
+
+#gameboard > *{
+ display: flex;
+}
+.square{
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.players{
+  margin-bottom: 20px;
+   display: flex;
+  justify-content: space-around;
+
+}
+
+.players button{
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color .025s;
+}
+
+.players button:hover{
+  background-color: rgb(135, 70, 201);
+}
+
+.restartBtn{
+  background-color: darkred;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#results{
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+
+}
+
+.winner{
+  background-color: rebeccapurple;
+  color: white;
 }
